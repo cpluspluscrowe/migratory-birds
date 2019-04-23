@@ -20,9 +20,10 @@
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
-  (def input [1 4 4 4 5 3])
+  (def input (read-string (str (slurp "src/migratory_birds/input04.txt"))))
   (println (migrate-birds input))
   )
 
 
 ; output 4
+
