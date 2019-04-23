@@ -15,13 +15,13 @@
   (def hm (frequencies input))
   (def highest-frequency (get-most-frequent-count hm))
   (def filter-for-highest-frequency (filter (partial has-highest-frequency highest-frequency) hm))
-  (min (keys filter-for-highest-frequency)))
+  (first (min (keys filter-for-highest-frequency))))
 
 (defn -main
   "I don't do a whole lot ... yet."
   [& args]
   (def input [1 4 4 4 5 3])
-  (migrate-birds input)
+  (println (migrate-birds input))
   )
 
 
