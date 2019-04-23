@@ -18,7 +18,7 @@
   (first (min (keys filter-for-highest-frequency))))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Clojure solution to the hackerrank problem for migratory birds"
   [& args]
   (def input (read-string (str (slurp "src/migratory_birds/input04.txt"))))
   (println (migrate-birds input))
